@@ -5,7 +5,7 @@
         <nav>
           <a :href="link">{{ title }}</a>
         </nav>
-        <button>X</button>
+        <base-button>X</base-button>
       </header>
       <p>{{ description }}</p>
     </base-card>
@@ -13,7 +13,12 @@
 </template>
 
 <script>
+import BaseButton from '../UI/BaseButton.vue';
+
 export default {
+  components: {
+    BaseButton
+  },
   props: ['title', 'description', 'link']
 };
 </script>
@@ -50,19 +55,5 @@ a {
 a:hover,
 a:active {
   color: green;
-}
-
-button {
-  color: whitesmoke;
-  border-style: none;
-  font-size: 1rem;
-}
-
-button:hover,
-button:active {
-  color: red;
-  border-style: none;
-  font-size: 1rem;
-  cursor: not-allowed;
 }
 </style>
