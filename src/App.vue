@@ -1,21 +1,13 @@
 <template>
-  <ul>
-    <resource-item
-      v-for="res in storedResources"
-      :key="res.id"
-      :title="res.title"
-      :description="res.description"
-      :link="res.link"
-    ></resource-item>
-  </ul>
+  <stored-resources :resources="storedResources"></stored-resources>
 </template>
 
 <script>
-import ResourceItem from './components/resource-items/ResourceItem.vue';
+import StoredResources from './components/resource-items/StoredResources.vue';
 
 export default {
   components: {
-    ResourceItem
+    StoredResources
   },
   data() {
     return {
@@ -46,3 +38,18 @@ export default {
   }
 };
 </script>
+
+<style>
+* {
+  box-sizing: border-box;
+  background-color: black;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+</style>
