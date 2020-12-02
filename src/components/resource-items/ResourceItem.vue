@@ -13,12 +13,7 @@
 </template>
 
 <script>
-import BaseButton from '../UI/BaseButton.vue';
-
 export default {
-  components: {
-    BaseButton
-  },
   props: ['title', 'description', 'link']
 };
 </script>
@@ -29,7 +24,7 @@ li {
   max-width: 40rem;
   color: whitesmoke;
   list-style-type: '📍 ';
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   font-size: 1rem;
 }
 
@@ -54,6 +49,6 @@ a {
 
 a:hover,
 a:active {
-  color: green;
+  color: rgb(0, 91, 70);
 }
 </style>

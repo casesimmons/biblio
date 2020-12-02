@@ -13,7 +13,7 @@ export default {
 <style scoped>
 header {
   width: 100%;
-  height: 6rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ header {
 header div {
   font-size: 2rem;
   color: white;
-  text-shadow: 0 1px 8px pink;
+  /* text-shadow: 0 1px 8px pink; */
   /* margin: 0; */
 }
 </style>

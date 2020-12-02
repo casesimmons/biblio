@@ -14,18 +14,21 @@ export default {
 button {
   color: whitesmoke;
   border-style: none;
+  background-color: transparent;
+  outline: none;
   font-size: 1rem;
 }
 
 button:hover,
 button:active {
-  color: red;
+  color: rgb(127, 0, 0);
   border-style: none;
+  outline: none;
   font-size: 1rem;
-  cursor: not-allowed;
+  cursor: pointer;
 }
 
-.flat {
+/* .flat {
   background-color: transparent;
   color: #3a0061;
   border: none;
@@ -34,5 +37,5 @@ button:active {
 .flat:hover,
 .flat:active {
   background-color: #edd2ff;
-}
+} */
 </style>
