@@ -5,7 +5,7 @@
         <nav>
           <a :href="link">{{ title }}</a>
         </nav>
-        <base-button>X</base-button>
+        <base-button @click="removeResource(id)">X</base-button>
       </header>
       <p>{{ description }}</p>
     </base-card>
@@ -14,7 +14,8 @@
 
 <script>
 export default {
-  props: ['title', 'description', 'link']
+  props: ['id', 'title', 'description', 'link'],
+  inject: ['removeResource']
 };
 </script>
 

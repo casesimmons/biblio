@@ -55,7 +55,8 @@ export default {
   provide() {
     return {
       resources: this.storedResources,
-      addResource: this.addResource
+      addResource: this.addResource,
+      removeResource: this.removeResource
     };
   },
   computed: {
@@ -81,6 +82,10 @@ export default {
       this.storedResources.unshift(newResource);
       // change to stored-resources tab
       this.selectedTab = 'stored-resources';
+    },
+    removeResource(resId) {
+      const resIndex = this.storedResources.findIndex(res => res.id === resId);
+      this.storedResources.splice(resIndex, 1);
     }
   }
 };

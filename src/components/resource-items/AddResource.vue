@@ -85,7 +85,7 @@ textarea {
   font: inherit;
   padding: 0.15rem;
   border: 1px solid grey;
-  background-color: #black;
+  background-color: black;
   color: whitesmoke;
 }
 
@@ -94,7 +94,7 @@ textarea:focus {
   outline: none;
   color: whitesmoke;
   /* border-color: green; */
-  background-color: #black;
+  background-color: black;
 }
 
 .form-control {
