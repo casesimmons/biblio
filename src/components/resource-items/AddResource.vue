@@ -2,3 +2,8 @@
   <h2>Add Resource</h2>
 </template>
 
+<style scoped>
+h2 {
+  color: whitesmoke;
+}
+</style>

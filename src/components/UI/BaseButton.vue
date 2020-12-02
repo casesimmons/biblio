@@ -21,21 +21,22 @@ button {
 
 button:hover,
 button:active {
-  color: rgb(127, 0, 0);
+  color: rgb(0, 91, 70);
   border-style: none;
   outline: none;
   font-size: 1rem;
   cursor: pointer;
 }
 
-/* .flat {
+.flat {
+  color: grey;
   background-color: transparent;
-  color: #3a0061;
-  border: none;
+  outline: none;
+  font-size: 1rem;
 }
 
 .flat:hover,
 .flat:active {
-  background-color: #edd2ff;
-} */
+  color: rgb(0, 91, 70);
+}
 </style>
