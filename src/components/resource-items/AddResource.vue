@@ -62,7 +62,25 @@ export default {
         this.inputIsInvalid = true;
         return;
       }
-      this.addResource(enteredTitle, enteredDesc, enteredLink);
+      // toggle tab back to archived
+      this.addResource();
+
+      // Post request to Firebase
+      fetch('https://biblio-37450.firebaseio.com/resources.json', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          title: enteredTitle,
+          description: enteredDesc,
+          link: enteredLink
+        })
+      });
+
+      this.$refs.titleInput.value = '';
+      this.$refs.descInput.value = '';
+      this.$refs.linkInput.value = '';
     },
     confirmError() {
       this.inputIsInvalid = false;
